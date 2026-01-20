@@ -1,0 +1,75 @@
+🌐 DIGITAL DIVIDE PREDICTOR DASHBOARD - QUICK START GUIDE
+==========================================================
+
+STEP 1: Ensure Data Files Exist
+--------------------------------
+Make sure these files are in your workspace:
+✓ processed_aadhaar_data.csv
+✓ district_clusters.csv
+
+If missing, run these scripts first:
+> python step3_calculate_index.py
+> python step5_ml_models.py
+
+STEP 2: Start the Dashboard
+----------------------------
+Open your terminal/command prompt and run:
+
+> streamlit run app_dashboard.py
+
+The dashboard will open automatically in your browser at:
+http://localhost:8501
+
+STEP 3: Navigate the Dashboard
+-------------------------------
+The dashboard has 5 powerful pages:
+
+🏠 Dashboard Overview
+   - Executive summary with key metrics
+   - District distribution by risk
+   - Top 10 critical and performing districts
+
+🔍 District Predictor
+   - Select any district to get instant risk assessment
+   - Personalized recommendations based on DLI score
+   - State and national comparisons
+   - Budget estimates for interventions
+
+📈 Analytics
+   - State-wise digital literacy comparison
+   - Interactive scatter plots and histograms
+   - Temporal trends analysis
+
+🗺️ Geographic Insights
+   - Top 20 critical districts visualization
+   - Regional performance matrix
+   - Downloadable filtered data
+
+🎯 Recommendations
+   - Strategic recommendations (immediate, medium, long-term)
+   - ROI calculations and impact estimates
+   - Downloadable recommendation report
+
+FEATURES:
+---------
+✨ Interactive visualizations with Plotly
+✨ Real-time district risk predictions
+✨ Downloadable reports and data
+✨ Professional UI with custom styling
+✨ Search and filter capabilities
+
+TROUBLESHOOTING:
+----------------
+If you get import errors, install dependencies:
+> pip install streamlit plotly pandas numpy
+
+Press Ctrl+C in terminal to stop the dashboard.
+
+DEMO TIP FOR HACKATHON:
+------------------------
+1. Start with Dashboard Overview to show scale
+2. Use District Predictor on a critical district (wow factor!)
+3. Show Analytics page for deep insights
+4. End with Recommendations to show impact
+
+This interactive dashboard will impress judges! 🏆
